@@ -1,0 +1,161 @@
+ 
+        
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.header {
+background: #ff6f61;
+color: white;
+padding: 1rem 0;
+text-align: center;
+perspective: 1000px;
+}
+
+.header h1 {
+margin: 0;
+font-size: 2.5rem;
+transform: rotateY(-20deg);
+transition: transform 1s;
+}
+
+.header h1:hover {
+transform: rotateY(0deg);
+}
+
+.header p {
+margin: 0.5rem 0 0;
+font-size: 1.25rem;
+transform: rotateY(-20deg);
+transition: transform 1s;
+}
+
+.header p:hover {
+transform: rotateY(0deg);
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: calc(100vh - 120px);
+padding: 2rem;
+perspective: 1000px;
+}
+
+.form-container {
+background: #fff;
+padding: 2rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: rgba(230, 223, 220, 0.9);
+border-radius: 10px;
+text-align: center;
+max-width: 500px;
+width: 100%;
+transform: rotateY(-10deg);
+transition: transform 1s;
+}
+
+.form-container:hover {
+transform: rotateY(0deg);
+}
+
+.form-container h2 {
+margin-bottom: 1rem;
+color: #333;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+label {
+font-weight: 500;
+margin: 0.5rem 0;
+}
+
+input {
+padding: 0.5rem;
+font-size: 1rem;
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+border-radius: 5px;
+outline: none;
+transition: border-color 0.3s;
+}
+
+input:focus {
+border-color: #ff6f61;
+}
+
+button {
+padding: 0.75rem;
+font-size: 1rem;
+background: #ff6f61;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+button:hover {
+background: #ff4b3a;
+}
+
+.footer {
+background: #333;
+color: #fff;
+text-align: center;
+padding: 1rem 0;
+}
+
+.footer p {
+margin: 0;
+}
+
+.footer a {
+color: #ff6f61;
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+}
+
+#result {
+margin-top: 1rem;
+font-size: 1.125rem;
+color: #333;
+}
+
+/* 3D animations */
+@keyframes rotate {
+0% {
+    transform: rotateY(0);
+}
+100% {
+    transform: rotateY(360deg);
+}
+}
+
+.rotating-icon {
+font-size: 4rem;
+animation: rotate 10s linear infinite;
+color: #ff6f61;
+}
+  
