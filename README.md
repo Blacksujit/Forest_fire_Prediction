@@ -2,6 +2,10 @@
 
 This project aims to predict the occurrence of forest fires using machine learning. The project includes a Flask-based application that serves both backend (for model training and prediction) and frontend (for user interaction).
 
+# Link For Project:
+
+https://forest-fire-prediction-of6q.onrender.com/
+
 # Web Page: (Created with ❤ using Threejs Models)
 
 ![alt text](image.png)
